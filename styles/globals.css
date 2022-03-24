@@ -1,16 +1,26 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
+@layer base {
+    @font-face {
+      font-family: avenir;
+      src: url("../public/font/avenir/AvenirLTStd-Book.otf") format("opentype");
+    }
+    @font-face {
+      font-family: avenir-roman;
+      src: url("../public/font/avenir/AvenirLTStd-Roman.otf") format("opentype");
+    }
+  
+    @font-face {
+      font-family: avenir-black;
+      src: url("../public/font/avenir/AvenirLTStd-Black.otf") format("opentype");
+    }
+    @font-face {
+      font-family: whippin;
+      font-weight: bold;
+      src: url("../public/font/Whippin/WhippinPicadilly-Regular.otf")
+        format("opentype");
+    }
+  }
+  
